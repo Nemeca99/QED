@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "source": "Combined Lumbra's Gigabase + Lichess Database",
+    "version": "2025-01-01",
+    "total_chess_games": 1,
+    "total_lichess_evaluations": 1,
+    "total_lichess_puzzles": 1,
+    "description": "Combined training data for QEC research"
+  },
+  "chess_games": {
+    "total": 1,
+    "high_quality": 1,
+    "entanglement_opportunities": 5,
+    "forced_move_patterns": 3,
+    "reactive_escape_patterns": 2
+  },
+  "lichess_data": {
+    "evaluations": {
+      "total": 1,
+      "high_entanglement": 0,
+      "tactical_positions": 0,
+      "positional_positions": 1
+    },
+    "puzzles": {
+      "total": 1,
+      "qec_relevant": 1,
+      "tactical_puzzles": 0,
+      "expert_puzzles": 0
+    }
+  },
+  "qec_training": {
+    "entanglement_examples": 5,
+    "forced_move_examples": 3,
+    "tactical_examples": 2,
+    "positional_examples": 1,
+    "total_training_examples": 11
+  },
+  "recommendations": {
+    "opening_book": "Use chess games for opening theory",
+    "tactical_training": "Use Lichess puzzles for tactical patterns",
+    "positional_training": "Use Lichess evaluations for positional understanding",
+    "entanglement_training": "Combine both databases for comprehensive entanglement analysis"
+  }
+}

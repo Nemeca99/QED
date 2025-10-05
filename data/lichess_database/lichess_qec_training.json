@@ -1,0 +1,58 @@
+{
+  "evaluations": {
+    "total": 1,
+    "high_entanglement": [],
+    "tactical_positions": [],
+    "positional_positions": []
+  },
+  "puzzles": {
+    "total": 1,
+    "qec_relevant": [
+      {
+        "puzzle_id": "sample_001",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "moves": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5",
+        "rating": 1500,
+        "themes": [
+          "fork",
+          "tactical"
+        ],
+        "qec_analysis": {
+          "entanglement_opportunities": [
+            {
+              "move_number": 1,
+              "move": "e2e4",
+              "type": "pawn_entanglement",
+              "description": "Pawn move that could create entanglement"
+            }
+          ],
+          "forced_move_sequence": {
+            "total_moves": 4,
+            "captures": 0,
+            "checks": 0,
+            "sequence_type": "positional"
+          },
+          "tactical_patterns": [
+            "fork_entanglement"
+          ],
+          "difficulty_level": "intermediate",
+          "qec_relevance": {
+            "relevance_score": 0.5,
+            "relevant_themes": [
+              "fork"
+            ],
+            "qec_training_value": "medium"
+          }
+        }
+      }
+    ],
+    "tactical_puzzles": [],
+    "expert_puzzles": []
+  },
+  "combined_training": {
+    "entanglement_examples": [],
+    "forced_move_examples": [],
+    "tactical_examples": [],
+    "positional_examples": []
+  }
+}
