@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quantum Entanglement Chess (QEC)
 
 ## 🎯 **Complete QEC Research Framework**
@@ -191,3 +192,6 @@ The QEC system is now **complete** with:
 ✅ **Clean workspace** with logical organization  
 
 The system is **production-ready** and **research-ready** for the next phase of development! 🎯
+=======
+# QED
+>>>>>>> 9176df81200245f083a0168266b2f7092ebfdaa3
