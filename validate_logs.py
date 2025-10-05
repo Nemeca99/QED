@@ -128,6 +128,10 @@ class QECLogValidator:
                             # Move log format
                             if 'from' not in record or 'to' not in record:
                                 self.warnings.append(f"JSONL record {i+1} in {jsonl_file} missing 'from' or 'to' field")
+                        elif 'move' in record and 'player' in record:
+                            # Human simulation format
+                            if 'from' not in record or 'to' not in record:
+                                self.warnings.append(f"JSONL record {i+1} in {jsonl_file} missing 'from' or 'to' field")
                         else:
                             self.warnings.append(f"JSONL record {i+1} in {jsonl_file} has unknown format")
                     
