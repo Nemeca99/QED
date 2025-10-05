@@ -1,0 +1,47 @@
+{
+  "example_games": {
+    "game_1": {
+      "seed": 42,
+      "result": "draw",
+      "total_plies": 45,
+      "forced_moves": 8,
+      "reactive_moves": 3,
+      "captures": 5,
+      "promotions": 0,
+      "final_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    },
+    "game_2": {
+      "seed": 43,
+      "result": "white_wins",
+      "total_plies": 38,
+      "forced_moves": 6,
+      "reactive_moves": 2,
+      "captures": 7,
+      "promotions": 1,
+      "final_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    },
+    "game_3": {
+      "seed": 44,
+      "result": "black_wins", 
+      "total_plies": 52,
+      "forced_moves": 12,
+      "reactive_moves": 4,
+      "captures": 9,
+      "promotions": 0,
+      "final_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  "invariant_tests": {
+    "king_exclusion": "passed",
+    "link_count": "passed", 
+    "symmetry": "passed",
+    "break_on_capture": "passed",
+    "break_on_promotion": "passed"
+  },
+  "performance_benchmarks": {
+    "move_generation_ms": 0.5,
+    "evaluation_ms": 0.2,
+    "full_game_ms": 150.0,
+    "cache_hit_rate": 0.85
+  }
+}

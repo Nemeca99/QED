@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  qec:
+    build: .
+    container_name: qec-runtime
+    volumes:
+      - ./logs:/logs
+      - ./cache:/app/cache
+    environment:
+      - QEC_LOG_DIR=/logs
+      - QEC_CACHE_DIR=/app/cache
+      - PYTHONPATH=/app
+    command: >
+      sh -c "
+        echo 'QEC Runtime Ready' &&
+        echo 'Available commands:' &&
+        echo '  qec-simulate --help' &&
+        echo '  qec-research --help' &&
+        echo '  qec-validate --help' &&
+        tail -f /dev/null
+      "
+    healthcheck:
+      test: ["CMD", "python", "-c", "from core import Game; Game(seed=42)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  qec-benchmark:
+    build: .
+    container_name: qec-benchmark
+    volumes:
+      - ./bench:/app/bench
+      - ./logs:/logs
+    environment:
+      - QEC_LOG_DIR=/logs
+      - QEC_CACHE_DIR=/app/cache
+    command: >
+      sh -c "
+        echo 'Running QEC benchmarks...' &&
+        python bench/benchmark_suite.py --output-dir /app/bench --csv benchmark_results.csv --report --check-regressions
+      "
+    profiles:
+      - benchmark
+
+  qec-fuzz:
+    build: .
+    container_name: qec-fuzz
+    volumes:
+      - ./logs:/logs
+    environment:
+      - QEC_LOG_DIR=/logs
+      - QEC_CACHE_DIR=/app/cache
+    command: >
+      sh -c "
+        echo 'Running QEC fuzz tests...' &&
+        python test_fuzz_mutation.py --fuzz 1000 --output /logs/fuzz_results.json
+      "
+    profiles:
+      - fuzz

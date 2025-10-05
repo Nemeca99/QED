@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://qec.dev/schemas/qec_result_v1.json",
+  "title": "QEC Result Schema v1",
+  "description": "Schema for QEC game result files",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "game_id", 
+    "seed",
+    "result",
+    "total_plies",
+    "forced_moves",
+    "reactive_moves",
+    "final_fen"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "v1",
+      "description": "Schema version identifier"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO timestamp of result creation"
+    },
+    "git_sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{8}$",
+      "description": "Git commit SHA (first 8 characters)"
+    },
+    "config_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{8}$",
+      "description": "Configuration hash (first 8 characters)"
+    },
+    "game_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "description": "Unique game identifier"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Random seed used for game"
+    },
+    "result": {
+      "type": "string",
+      "enum": ["white_wins", "black_wins", "draw", "timeout", "move_limit"],
+      "description": "Game result"
+    },
+    "total_plies": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of plies in game"
+    },
+    "forced_moves": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of forced moves"
+    },
+    "reactive_moves": {
+      "type": "integer", 
+      "minimum": 0,
+      "description": "Number of reactive moves"
+    },
+    "captures": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of captures"
+    },
+    "promotions": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of promotions"
+    },
+    "entanglement_breaks": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of entanglement breaks"
+    },
+    "entanglement_persists": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of entanglement persistences"
+    },
+    "total_time_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total game time in milliseconds"
+    },
+    "avg_time_per_ply_ms": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Average time per ply in milliseconds"
+    },
+    "final_fen": {
+      "type": "string",
+      "pattern": "^[rnbqkpRNBQKP1-8/\\s]+ [wb] [KQkq-]+ [a-h1-8-]+ \\d+ \\d+$",
+      "description": "Final board position in FEN notation"
+    },
+    "final_entanglement_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{8}$",
+      "description": "Hash of final entanglement state"
+    },
+    "schema_valid": {
+      "type": "boolean",
+      "description": "Schema validation status"
+    },
+    "validation_errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of validation errors"
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "schema_version": "v1",
+      "timestamp": "2025-01-05T12:00:00Z",
+      "git_sha": "a1b2c3d4",
+      "config_hash": "e5f6g7h8",
+      "game_id": "game_0001",
+      "seed": 42,
+      "result": "white_wins",
+      "total_plies": 45,
+      "forced_moves": 8,
+      "reactive_moves": 3,
+      "captures": 5,
+      "promotions": 0,
+      "entanglement_breaks": 2,
+      "entanglement_persists": 6,
+      "total_time_ms": 1500,
+      "avg_time_per_ply_ms": 33.33,
+      "final_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "final_entanglement_hash": "12345678",
+      "schema_valid": true,
+      "validation_errors": []
+    }
+  ]
+}

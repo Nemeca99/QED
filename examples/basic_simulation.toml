@@ -1,0 +1,41 @@
+# QEC Basic Simulation Example
+# Pinned configuration for reproducible results
+
+[general]
+max_plies = 100
+move_cap = 50
+timeout_seconds = 60
+seed_base = 42
+
+[logging]
+enable_detailed_logs = true
+enable_fen_logging = true
+enable_entanglement_logging = true
+log_level = "INFO"
+save_pgn = true
+save_jsonl = true
+save_summary = true
+
+[ai_policies]
+default_white_policy = "minimax"
+default_black_policy = "minimax"
+minimax_depth = 2
+quiescence_depth = 1
+enable_killer_moves = true
+enable_history_heuristic = true
+
+[entanglement_maps]
+default_entropy_level = 0.5
+default_clustering_factor = 0.5
+default_symmetry_bias = 0.5
+enable_random_maps = true
+enable_fixed_maps = false
+
+[performance]
+enable_caching = true
+cache_size_mb = 50
+enable_fast_evaluation = true
+fast_eval_skip_positional_every = 2
+fast_eval_skip_entanglement_every = 3
+fast_eval_skip_activity_every = 2
+material_only_threshold = 30
