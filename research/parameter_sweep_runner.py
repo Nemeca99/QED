@@ -14,6 +14,7 @@ import random
 import itertools
 from typing import Dict, List, Tuple, Any, Optional
 from dataclasses import dataclass
+from datetime import datetime
 import numpy as np
 
 @dataclass
@@ -76,8 +77,10 @@ class QECParameterSweep:
     
     def __init__(self, output_file: str = "parameter_sweep_results.csv"):
         self.output_file = output_file
+        self.manifest_file = output_file.replace('.csv', '_manifest.json')
         self.results = []
         self.experiment_count = 0
+        self.completed_seeds = set()
     
     def generate_archetype_grid(self, num_points: int = 5) -> List[ArchetypeVector]:
         """Generate grid of archetype vectors"""
@@ -172,9 +175,34 @@ class QECParameterSweep:
             outcome_hash=outcome_hash
         )
     
+    def load_manifest(self):
+        """Load completed seeds from manifest"""
+        try:
+            with open(self.manifest_file, 'r') as f:
+                manifest = json.load(f)
+                self.completed_seeds = set(manifest.get('completed_seeds', []))
+                print(f"Loaded manifest: {len(self.completed_seeds)} completed seeds")
+        except FileNotFoundError:
+            print("No manifest found, starting fresh")
+            self.completed_seeds = set()
+    
+    def save_manifest(self):
+        """Save completed seeds to manifest"""
+        manifest = {
+            'completed_seeds': list(self.completed_seeds),
+            'total_experiments': len(self.results),
+            'last_updated': datetime.now().isoformat()
+        }
+        
+        with open(self.manifest_file, 'w') as f:
+            json.dump(manifest, f, indent=2)
+    
     def run_parameter_sweep(self, num_archetypes: int = 10, num_entropy_configs: int = 5, 
-                          num_games_per_config: int = 3, seed_base: int = 42):
-        """Run parameter sweep experiments"""
+                          num_games_per_config: int = 3, seed_base: int = 42, resume: bool = False):
+        """Run parameter sweep experiments with resume support"""
+        if resume:
+            self.load_manifest()
+        
         print(f"Running parameter sweep with {num_archetypes} archetypes, {num_entropy_configs} entropy configs, {num_games_per_config} games per config")
         
         # Generate parameter grids
@@ -187,12 +215,23 @@ class QECParameterSweep:
         total_experiments = len(archetypes) * len(entropy_configs) * num_games_per_config
         print(f"Total experiments: {total_experiments}")
         
+        if resume:
+            print(f"Skipping {len(self.completed_seeds)} already completed experiments")
+        
         experiment_num = 0
+        skipped = 0
+        
         for white_archetype in archetypes:
             for black_archetype in archetypes:
                 for map_entropy in entropy_configs:
                     for game_num in range(num_games_per_config):
                         seed = seed_base + experiment_num
+                        
+                        # Skip if already completed
+                        if resume and seed in self.completed_seeds:
+                            skipped += 1
+                            experiment_num += 1
+                            continue
                         
                         print(f"Running experiment {experiment_num + 1}/{total_experiments} (seed={seed})")
                         
@@ -200,19 +239,26 @@ class QECParameterSweep:
                             white_archetype, black_archetype, map_entropy, seed
                         )
                         self.results.append(result)
+                        self.completed_seeds.add(seed)
+                        
+                        # Save progress periodically
+                        if experiment_num % 10 == 0:
+                            self.save_manifest()
                         
                         experiment_num += 1
         
-        print(f"Completed {len(self.results)} experiments")
+        print(f"Completed {len(self.results)} experiments (skipped {skipped} already completed)")
+        self.save_manifest()
     
     def save_results(self):
-        """Save results to CSV"""
+        """Save results to CSV with explicit columns"""
         print(f"Saving results to {self.output_file}")
         
         with open(self.output_file, 'w', newline='') as csvfile:
+            # Explicit column order as requested
             fieldnames = [
-                'experiment_id', 'seed', 'result', 'total_plies', 'forced_moves', 
-                'reactive_moves', 'captures', 'promotions', 'final_fen', 'outcome_hash',
+                'map_entropy', 'arch_vector', 'seed', 'result', 'plies', 'forced', 'reactive',
+                'experiment_id', 'captures', 'promotions', 'final_fen', 'outcome_hash',
                 'white_aggression', 'white_risk', 'white_tempo', 'white_king_safety',
                 'white_pawn_control', 'white_disentangle_bias', 'white_complexity',
                 'black_aggression', 'black_risk', 'black_tempo', 'black_king_safety',
@@ -224,13 +270,18 @@ class QECParameterSweep:
             writer.writeheader()
             
             for result in self.results:
+                # Create arch_vector string
+                arch_vector = f"W({result.white_archetype.aggression:.2f},{result.white_archetype.risk:.2f},{result.white_archetype.tempo:.2f})_B({result.black_archetype.aggression:.2f},{result.black_archetype.risk:.2f},{result.black_archetype.tempo:.2f})"
+                
                 row = {
-                    'experiment_id': result.experiment_id,
+                    'map_entropy': result.map_entropy.entropy_level,
+                    'arch_vector': arch_vector,
                     'seed': result.seed,
                     'result': result.result,
-                    'total_plies': result.total_plies,
-                    'forced_moves': result.forced_moves,
-                    'reactive_moves': result.reactive_moves,
+                    'plies': result.total_plies,
+                    'forced': result.forced_moves,
+                    'reactive': result.reactive_moves,
+                    'experiment_id': result.experiment_id,
                     'captures': result.captures,
                     'promotions': result.promotions,
                     'final_fen': result.final_fen,
@@ -318,6 +369,7 @@ def main():
     parser.add_argument('--games_per_config', type=int, default=3, help='Games per configuration')
     parser.add_argument('--output', type=str, default='parameter_sweep_results.csv', help='Output CSV file')
     parser.add_argument('--seed_base', type=int, default=42, help='Base seed')
+    parser.add_argument('--resume', action='store_true', help='Resume from manifest')
     parser.add_argument('--power_analysis', action='store_true', help='Run power analysis')
     
     args = parser.parse_args()
@@ -334,7 +386,8 @@ def main():
         num_archetypes=args.archetypes,
         num_entropy_configs=args.entropy_configs,
         num_games_per_config=args.games_per_config,
-        seed_base=args.seed_base
+        seed_base=args.seed_base,
+        resume=args.resume
     )
     runner.save_results()
     

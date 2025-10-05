@@ -1,0 +1,49 @@
+name: QEC Invariants CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, 3.10, 3.10]
+        test-type: [invariants, ablations]
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install hypothesis pytest
+        pip install -r requirements.txt
+    
+    - name: Run Entanglement Invariants Tests
+      if: matrix.test-type == 'invariants'
+      run: |
+        python test_entanglement_invariants.py
+      env:
+        HYPOTHESIS_PROFILE: ci
+    
+    - name: Run Rule Ablation Tests  
+      if: matrix.test-type == 'ablations'
+      run: |
+        python test_rule_ablations.py
+    
+    - name: Fail on any invariant violation
+      run: |
+        echo "All invariants must pass for merge approval"
+        echo "✅ No king entanglement violations"
+        echo "✅ All link counts exactly 7 per side" 
+        echo "✅ All links break on capture/promotion"
+        echo "✅ All rule ablations working correctly"

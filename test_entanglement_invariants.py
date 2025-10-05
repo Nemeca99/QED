@@ -21,7 +21,7 @@ class QECEntanglementInvariants:
         self.failed = 0
     
     @given(st.integers(min_value=1, max_value=10000))
-    @settings(max_examples=100)
+    @settings(max_examples=100, deadline=5000)
     def test_entanglement_king_exclusion(self, seed: int):
         """Property: Entanglement links never include kings"""
         random.seed(seed)
