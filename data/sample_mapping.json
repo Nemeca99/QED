@@ -1,0 +1,22 @@
+{
+  "W_pawn_to_black": {
+    "W_P_a2": "B_R_a8",
+    "W_P_b2": "B_N_b8",
+    "W_P_c2": "B_B_c8",
+    "W_P_d2": "B_Q_d8",
+    "W_P_e2": "B_B_f8",
+    "W_P_f2": "B_N_g8",
+    "W_P_g2": "B_R_h8"
+  },
+  "B_pawn_to_white": {
+    "B_P_a7": "W_R_a1",
+    "B_P_b7": "W_N_b1",
+    "B_P_c7": "W_B_c1",
+    "B_P_d7": "W_Q_d1",
+    "B_P_e7": "W_B_f1",
+    "B_P_f7": "W_N_g1",
+    "B_P_g7": "W_R_h1"
+  },
+  "white_free_pawn": "W_P_h2",
+  "black_free_pawn": "B_P_h7"
+}

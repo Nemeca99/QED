@@ -1,0 +1,16 @@
+{
+  "white_player": "Magnus Carlsen",
+  "black_player": "Fabiano Caruana",
+  "result": "Draw",
+  "moves": 200,
+  "forced_moves": 10,
+  "reactive_moves": 12,
+  "captures": 16,
+  "entanglement_breaks": 0,
+  "duration": 0.49950599670410156,
+  "seed": 42,
+  "white_rating": 2850,
+  "black_rating": 2820,
+  "white_style": "positional",
+  "black_style": "tactical"
+}

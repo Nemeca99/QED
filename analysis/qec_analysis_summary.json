@@ -1,0 +1,10 @@
+{
+  "total_games": 54,
+  "draw_rate": 90.74074074074075,
+  "decisive_rate": 9.25925925925926,
+  "white_advantage": 100.0,
+  "avg_game_length": 187.24074074074073,
+  "total_reactive_moves": 724,
+  "total_forced_moves": 0,
+  "reactive_forced_ratio": 724.0
+}

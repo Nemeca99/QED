@@ -1,0 +1,171 @@
+You’ll want the math that defines the *state space*, *entanglement mapping*, and *move propagation.*
+Below are the minimal formal expressions needed to ground Quantum Entanglement Chess (QEC) in math.
+
+---
+
+### **1. Board and Pieces**
+
+Let
+[
+B = {a1,\dots,h8}
+]
+be the set of 64 squares.
+
+Each piece (p_i) has attributes
+[
+p_i = (t_i, c_i, s_i, e_i)
+]
+where
+
+* (t_i) = type ∈ {K,Q,R,B,N,P},
+* (c_i) = color ∈ {White, Black},
+* (s_i) = current square ∈ B ∪ {∅ (if captured)},
+* (e_i) = index of its entangled counterpart or ∅ if none.
+
+---
+
+### **2. Entanglement Functions (Dual Mapping)**
+
+Define two one-to-one maps (kings excluded):
+[
+E_W : P_W^{pawn} \setminus \{p^W_{free}\} \rightarrow P_B^{\neg king}
+]
+[
+E_B : P_B^{pawn} \setminus \{p^B_{free}\} \rightarrow P_W^{\neg king}
+]
+with exactly one free pawn per side (p^W_{free}, p^B_{free}). Both maps are injective and fixed unless broken.
+
+Bijectivity over chosen codomains holds for the selected 7 targets per side, i.e.,
+[
+\forall p \in P_W^{pawn} \setminus \{p^W_{free}\}: E_W(p) \neq \text{null},\quad E_W^{-1}(E_W(p)) = p
+]
+and symmetrically for (E_B).
+
+When a member of an entangled pair is captured or a pawn in the pair promotes, the corresponding link becomes null for both members:
+[
+E_W(p)=\text{null}\;\lor\;E_B(p)=\text{null}.
+]
+
+---
+
+### **3. State Representation**
+
+A board state (S_t) at ply (t) is
+[
+S_t = (P_t, E_t, \tau_t)
+]
+where (P_t) = set of living pieces with their positions,
+(E_t) = current entanglement mapping,
+(\tau_t \in {W,B}) = side to move.
+
+The complete game is a sequence
+[
+\Gamma = (S_0, S_1, \dots, S_T)
+]
+terminated by checkmate, dual-king condition, or draw.
+
+---
+
+### **4. Move Function (Single Forced Response)**
+
+For a given state (S_t):
+
+1. The active player chooses a legal classical move (m) for some piece (p).
+2. If (p) is entangled via (E_W) or (E_B) to counterpart (q) and (q) has at least one legal move, exactly one forced move (m_q \in M(q,S_t)) is played by (q)'s owner during the same turn.
+3. Apply both transformations to yield
+   [
+   S_{t+1}=T(S_t, m, m_q).\quad (\text{If no legal } m_q \text{ exists, omit it})
+   ]
+
+(T) enforces classical legality and king safety for both moves. Compound classical moves (e.g., castling) may relocate multiple pieces; only pieces that actually move and are entangled can trigger the single forced response.
+
+---
+
+### **5. Reactive-Check Function (Immediate One-Square Escape)**
+
+Define a predicate
+[
+\text{Check}(S_t,,c)=
+\begin{cases}
+1 & \text{if side } c \text{’s king is attacked}\
+0 & \text{otherwise}
+\end{cases}
+]
+
+If (\text{Check}(S_t,\text{defender})=1)
+and there exists a legal one-square king move (m_K), apply the king's reactive move within the same turn before switching (\tau):
+[
+S_t' = T(S_t,m_K)
+]
+If no such (m_K) exists, checkmate occurs immediately.
+
+---
+
+### **6. State-Space Size**
+
+Let (|S|) ≈ (4.6 × 10^{46}) (classical estimate).
+QEC adds fixed dual mappings of at most 7 links per side. For a given selection of 7 targets per side, the mapping count is bounded by (7!)^2 (ignoring pre-game target subset selection and which pawns are free). Thus:
+[
+|S_{QEC}| \approx |S| \times (7!)^2 \quad \text{(upper bound over fixed target choices)}
+]
+This preserves finiteness; no continuous randomness is introduced.
+
+Finite and enumerable; no continuous randomness.
+
+---
+
+### **7. Graph Representation**
+
+Represent all positions as nodes (V=S).
+Edges (E_{classical}) = legal single-move transitions.
+QEC introduces a secondary edge set
+
+[
+E_{QEC} = {(s_i,s_j)\mid s_j = T(s_i,m,m_{E(m)})}
+]
+
+so the composite move graph is
+[
+G_{QEC}=(V,,E_{classical}\cup E_{QEC}).
+]
+
+---
+
+### **8. Evaluation Functions (for AI)**
+
+Sample heuristic:
+[
+f(S_t) =
+\alpha M(S_t) +
+\beta F(S_t) +
+\gamma C(S_t)
+]
+where
+
+* (M) = material differential,
+* (F) = number of free (unentangled) pieces,
+* (C) = king safety metric,
+  and (\alpha,\beta,\gamma) are tunable weights.
+
+---
+
+### **9. Turn-Timer Constraint**
+
+Each player’s decision time (Δt \leq 180 \text{s}).
+Turn sequence:
+[
+t_{n+1}=t_n+1, \quad \tau_{t+1}= \neg\tau_t.
+]
+
+---
+
+### **10. Theoretical Boundaries**
+
+* Deterministic: (T) is a function, not a relation.
+* Finite: (|S_{QEC}|<10^{52}).
+* Terminating: captures and draws ensure (\exists T<∞.)
+
+---
+
+Include these sections in your document under a “Mathematical Foundation” heading.
+They provide all the symbolic structure needed for algorithm design, balance analysis, and academic rigor.

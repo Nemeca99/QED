@@ -1,0 +1,191 @@
+Understood. Below is a clean, structured **formal rules and mechanics document** you can use as a foundation for coding or publishing.
+It is written in precise technical form so it can serve as both a game-design reference and developer specification.
+
+---
+
+# **Quantum Entanglement Chess (QEC) – Formal Ruleset v1.0**
+
+### **1. Overview**
+
+Quantum Entanglement Chess (QEC) is a deterministic variant of classical chess.
+All base chess rules—piece movement, board size, victory conditions—remain intact.
+The variant introduces *entanglement links* between pieces of opposing sides, producing correlated movement and reactive play.
+
+---
+
+### **2. Board and Setup**
+
+* Standard 8×8 chessboard, classical initial placement.
+* All movement and captures follow orthodox chess mechanics unless modified below.
+* Notation: standard algebraic notation is valid; additional notation specifies entanglement pairs (see §12).
+
+---
+
+### **3. Entanglement System**
+
+**3.1 Initial Linking (Dual, 7-per-side)**
+
+* Each **white pawn (7 of 8)** is entangled one-to-one with a **black non-king piece**; one white pawn is designated the **free pawn**.
+* Each **black pawn (7 of 8)** is entangled one-to-one with a **white non-king piece**; one black pawn is designated the **free pawn**.
+* Kings are never entangled.
+* The mapping may be random, drafted, or pre-programmed before play. Once set, links are fixed unless broken (§3.4).
+
+**3.2 Simultaneous Motion Rule (Single Forced Response)**
+When any member of an entangled pair physically moves:
+
+* Its linked counterpart must immediately make exactly one *legal* move.
+* If no legal move exists, the counterpart remains stationary.
+* If multiple legal moves exist, the owner of that counterpart selects the move (the mover never chooses the opponent’s move).
+* This forced response is part of the same turn.
+
+**3.3 Initiative and Turn Order**
+
+* Standard alternating turns remain.
+* Each player receives **3 minutes per turn.**
+* There is no total game clock.
+
+**3.4 Breaking Entanglement**
+
+* If either member of an entangled pair is *captured,* that entanglement ceases for both.
+* If a pawn promotes, both it and its linked piece become free (unentangled); no re-entangling occurs.
+* Once freed, a piece never becomes re-entangled.
+
+---
+
+### **4. Reactive Check Rule (Immediate One-Square Escape)**
+
+If a player delivers **check**, the opponent must immediately respond during the same turn:
+
+* The checked king must attempt one *legal one-square* move to leave check.
+* If no such move exists, **checkmate** occurs instantly.
+* After this reactive move, play continues normally with the attacker’s next turn.
+
+---
+
+### **5. Win, Draw, and Loss Conditions**
+
+* **Checkmate** – unchanged.
+* **Draw** – both sides reduced to kings only ⇒ *both lose.*
+* **Tournament format:** best-of-three series.
+
+  * Two mutual losses ⇒ next round becomes single sudden-death game.
+  * Prize rollover applies if all games drawn.
+
+---
+
+### **6. Timing Mechanics**
+
+* Each player has **3 minutes per move.**
+* Using the full timer effectively grants the opponent additional calculation time.
+* Fast aggressive play compresses the opponent’s available thinking window.
+* Strategic trade-off: deliberation vs. tempo denial.
+
+---
+
+### **7. Movement Dynamics**
+
+* Exactly one forced entangled response may occur per turn, even if a classical move relocates multiple pieces (e.g., castling).
+* During castling, only the rook’s relocation can trigger entanglement (the king is never entangled). If the castling rook is linked, the counterpart must make one legal move.
+* Captures resolve in sequence of declaration: mover first, then forced counterpart.
+* All resulting board positions must remain legal per classical rules, including king safety.
+
+---
+
+### **8. Strategy Inversion**
+
+* **Pawns** become command units controlling opponent mobility.
+* **Major pieces** act as expendable modifiers or entanglement breakers.
+* Aggression relies on **counter-timing**, not first-move initiative.
+* The second player gains informational advantage through reaction.
+
+---
+
+### **9. King Mobility and Defense**
+
+* The king is reactive and mobile; can move defensively during opponent turns (§4).
+* Check cycles can cause multi-piece movement per turn, producing high volatility.
+* Mate occurs only when no reactive square remains.
+
+---
+
+### **10. Stalemate and Lock Prevention**
+
+Entanglement ensures near-continuous motion:
+
+* Forced movements often reopen blocked files or diagonals.
+* Static positions (classical stalemates) are almost impossible.
+
+---
+
+### **11. LED / Digital Implementation (Optional Physical Form)**
+
+* Each piece contains an indicator light or color tag.
+* Linked pieces share color/ID number for entanglement visibility.
+* Board may reveal all entanglements at start or keep them hidden until activation.
+
+---
+
+### **12. Notation System**
+
+Extended algebraic notation:
+
+```
+e2-e4 [↔ h8R]
+```
+
+denotes a white pawn from e2 moved to e4, forcing entangled black rook (h8) to move.
+If forced move is h8–h7:
+
+```
+e2-e4 [↔ h8R:h8-h7]
+```
+
+Captures that break entanglement append “✖”.
+
+---
+
+### **13. AI / Simulation Framework**
+
+* State = standard FEN + entanglement mapping.
+* Move generation = classical legal moves + forced entangled responses.
+* Evaluation metrics: material, king safety, entanglement control, free-piece ratio.
+* Game terminates upon classical mate or dual-king condition.
+
+---
+
+### **14. Theoretical Properties**
+
+* Deterministic finite system; all positions are classical-legal.
+* State space identical to chess; edge set expanded by entanglement relations.
+* Optimal play equilibrium likely draw, but path volatility much higher.
+* Skill emphasis: board-state memory, spatial reasoning, and timing management.
+
+---
+
+### **15. Educational Level and Accessibility**
+
+* Requires knowledge of classical chess movement only.
+* Distinct strategic framework; learning QEC does *not* confer standard chess strength.
+* Recommended progression: Classical → QEC.
+
+---
+
+### **16. Design Goals**
+
+1. Preserve chess determinism.
+2. Introduce symmetric dependency and simultaneous motion.
+3. Invert value hierarchy (pawns > majors).
+4. Eliminate passive states.
+5. Enable both physical and digital play.
+
+---
+
+### **17. Credits**
+
+**Designer:** [Your Name]
+**Working Title:** *Quantum Entanglement Chess*
+**Version:** 1.0 (Concept Formalization Draft)
+
+---
+
+Would you like me to generate this as a properly formatted **PDF game-design document** so you can attach it to your development notes?
