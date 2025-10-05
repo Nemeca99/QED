@@ -1,0 +1,115 @@
+# QEC Configuration File
+# Comprehensive configuration for QEC simulations and research
+
+[general]
+# Basic simulation settings
+max_plies = 200
+move_cap = 100
+timeout_seconds = 300
+seed_base = 42
+
+[logging]
+# Logging configuration
+enable_detailed_logs = true
+enable_fen_logging = true
+enable_entanglement_logging = true
+log_level = "INFO"
+save_pgn = true
+save_jsonl = true
+save_summary = true
+
+[ai_policies]
+# AI policy configuration
+default_white_policy = "minimax"
+default_black_policy = "minimax"
+minimax_depth = 3
+quiescence_depth = 2
+enable_killer_moves = true
+enable_history_heuristic = true
+
+[archetypes]
+# Player archetype parameters
+[archetypes.aggressive]
+aggression = 0.8
+risk = 0.7
+tempo = 0.9
+king_safety = 0.3
+pawn_control = 0.6
+disentangle_bias = 0.4
+complexity = 0.5
+
+[archetypes.defensive]
+aggression = 0.2
+risk = 0.3
+tempo = 0.4
+king_safety = 0.9
+pawn_control = 0.8
+disentangle_bias = 0.6
+complexity = 0.7
+
+[archetypes.balanced]
+aggression = 0.5
+risk = 0.5
+tempo = 0.5
+king_safety = 0.5
+pawn_control = 0.5
+disentangle_bias = 0.5
+complexity = 0.5
+
+[entanglement_maps]
+# Entanglement map configuration
+default_entropy_level = 0.5
+default_clustering_factor = 0.5
+default_symmetry_bias = 0.5
+enable_random_maps = true
+enable_fixed_maps = false
+fixed_map_file = ""
+
+[performance]
+# Performance optimization settings
+enable_caching = true
+cache_size_mb = 100
+enable_fast_evaluation = true
+fast_eval_skip_positional_every = 3
+fast_eval_skip_entanglement_every = 5
+fast_eval_skip_activity_every = 2
+material_only_threshold = 50
+
+[research]
+# Research experiment settings
+default_hypothesis_tests = ["H1", "H2", "H3", "H4", "H5", "H6"]
+default_archetype_pairs = ["aggressive", "defensive", "balanced"]
+default_map_entropy_levels = [0.2, 0.5, 0.8]
+default_replicates = 100
+enable_power_analysis = true
+effect_size_threshold = 0.05
+alpha_level = 0.05
+power_level = 0.8
+
+[output]
+# Output configuration
+results_directory = "results"
+logs_directory = "logs"
+plots_directory = "plots"
+enable_csv_export = true
+enable_json_export = true
+enable_plot_generation = true
+plot_format = "png"
+plot_dpi = 300
+
+[validation]
+# Data validation settings
+enable_schema_validation = true
+strict_mode = false
+ignore_malformed_logs = true
+validate_entanglement_maps = true
+validate_move_sequences = true
+
+[ci_cd]
+# CI/CD configuration
+enable_github_actions = true
+run_unit_tests = true
+run_smoke_tests = true
+run_performance_tests = true
+run_correctness_tests = true
+generate_artifacts = true
