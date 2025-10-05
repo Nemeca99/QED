@@ -1,0 +1,24 @@
+{
+  "batch_id": "demo_batch_001",
+  "source": "chesscom",
+  "files": [
+    "data\\demo_ingest\\raw",
+    "data\\demo_ingest\\features_v1.parquet"
+  ],
+  "sha256_hashes": [
+    "",
+    "591e979ae437110739e4b92199ec49e5b08c5d011f6f1a7e3d5076fa7ddb1f06"
+  ],
+  "row_counts": 5,
+  "start_date": "2025-01-05",
+  "end_date": "2025-01-05",
+  "schema_version": "v1",
+  "tool_versions": {
+    "pyarrow": "20.0.0",
+    "python": "3.8+"
+  },
+  "cmdline": "demo_deterministic_ingest.py",
+  "git_sha": "demo_sha",
+  "license": "CC0",
+  "created_at": "2025-10-05T17:41:45.740467"
+}
