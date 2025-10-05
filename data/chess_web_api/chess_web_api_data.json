@@ -1,0 +1,136 @@
+{
+  "players": [
+    {
+      "player": {
+        "name": "Magnus Carlsen",
+        "username": "MagnusCarlsen",
+        "title": "GM",
+        "rating": 2850,
+        "country": "Norway"
+      },
+      "games": [
+        {
+          "id": "sample_game_001",
+          "white": {
+            "username": "MagnusCarlsen",
+            "rating": 2850
+          },
+          "black": {
+            "username": "FabianoCaruana",
+            "rating": 2820
+          },
+          "winner": "white",
+          "status": "mate",
+          "rated": true,
+          "timeControl": "600+0",
+          "timeClass": "rapid",
+          "rules": "chess",
+          "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Be7 5. Re1 O-O 6. d4 exd4 7. Nxd4 Nxd4 8. Qxd4 d6 9. Bxc6 bxc6 10. Qd3 Be6 11. Bg5 h6 12. Bh4 g5 13. Bg3 Nh5 14. Bxe5 dxe5 15. Qd8+ Bf8 16. Qxf8#",
+          "moves": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "Nf6",
+            "O-O",
+            "Be7",
+            "Re1",
+            "O-O",
+            "d4",
+            "exd4",
+            "Nxd4",
+            "Nxd4",
+            "Qxd4",
+            "d6",
+            "Bxc6",
+            "bxc6",
+            "Qd3",
+            "Be6",
+            "Bg5",
+            "h6",
+            "Bh4",
+            "g5",
+            "Bg3",
+            "Nh5",
+            "Bxe5",
+            "dxe5",
+            "Qd8+",
+            "Bf8",
+            "Qxf8#"
+          ],
+          "clock": {
+            "initial": 600,
+            "increment": 0
+          },
+          "createdAt": 1640995200000,
+          "lastMoveAt": 1640995800000,
+          "turns": 15,
+          "qecAnalysis": {
+            "entanglementOpportunities": [
+              {
+                "moveNumber": 1,
+                "move": "e4",
+                "type": "pawn_entanglement",
+                "description": "Pawn move that could create entanglement"
+              },
+              {
+                "moveNumber": 5,
+                "move": "O-O",
+                "type": "castling_entanglement",
+                "description": "Castling move that could create entanglement"
+              }
+            ],
+            "forcedMovePatterns": [
+              {
+                "moveNumber": 15,
+                "move": "Qxf8#",
+                "type": "mate_threat",
+                "description": "Mate threat that forces response"
+              }
+            ],
+            "reactiveEscapePatterns": [
+              {
+                "moveNumber": 14,
+                "move": "Nh5",
+                "type": "piece_retreat",
+                "description": "Piece retreat from attack"
+              }
+            ],
+            "tacticalCombinations": [
+              {
+                "moveNumber": 13,
+                "move": "Bg3",
+                "type": "tactical_combination",
+                "description": "Tactical combination sequence"
+              }
+            ],
+            "positionalThemes": [
+              "e4_opening",
+              "middlegame_tactics"
+            ],
+            "timePressure": {
+              "initialTime": 600,
+              "increment": 0,
+              "timeControl": "600+0",
+              "timePressureLevel": "medium"
+            },
+            "performanceMetrics": {
+              "timeClass": "rapid",
+              "rules": "chess",
+              "rated": true,
+              "status": "mate"
+            }
+          }
+        }
+      ],
+      "totalGames": 1
+    }
+  ],
+  "totalGames": 1,
+  "metadata": {
+    "collectionTime": "2025-01-05T12:00:00Z",
+    "totalPlayers": 1,
+    "maxGamesPerPlayer": 1
+  }
+}

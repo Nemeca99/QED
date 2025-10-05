@@ -1,0 +1,41 @@
+{
+  "name": "qec-chess-web-api",
+  "version": "1.0.0",
+  "description": "Chess Web API integration for QEC (Quantum Entanglement Chess)",
+  "main": "scripts/chess_web_api_node.js",
+  "scripts": {
+    "start": "node scripts/chess_web_api_node.js",
+    "collect-data": "node scripts/chess_web_api_node.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chess-web-api": "^1.0.0",
+    "axios": "^1.6.0",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "chess",
+    "qec",
+    "quantum-entanglement-chess",
+    "lichess",
+    "chess.com",
+    "api",
+    "integration"
+  ],
+  "author": "QEC Research Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nemeca99/QED.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nemeca99/QED/issues"
+  },
+  "homepage": "https://github.com/Nemeca99/QED#readme"
+}
