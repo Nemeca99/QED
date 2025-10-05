@@ -1,0 +1,1320 @@
+{
+  "chesscom_games": [
+    {
+      "username": "MagnusCarlsen",
+      "games": [
+        {
+          "id": "141366329594",
+          "url": "https://www.chess.com/game/live/141366329594",
+          "white": {
+            "rating": 2939,
+            "result": "win",
+            "@id": "https://api.chess.com/pub/player/magnuscarlsen",
+            "username": "MagnusCarlsen",
+            "uuid": "a2761738-b155-11df-8018-000000000000"
+          },
+          "black": {
+            "rating": 2854,
+            "result": "resigned",
+            "@id": "https://api.chess.com/pub/player/firouzja2003",
+            "username": "Firouzja2003",
+            "uuid": "12120a32-f21e-11e7-805e-000000000000"
+          },
+          "result": "",
+          "time_control": "600",
+          "time_class": "rapid",
+          "rated": true,
+          "rules": "chess",
+          "fen": "4n3/5pk1/2R3p1/4K2p/5P2/6PP/8/8 b - - 0 45",
+          "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2025.08.01\"]\n[Round \"-\"]\n[White \"MagnusCarlsen\"]\n[Black \"Firouzja2003\"]\n[Result \"1-0\"]\n[CurrentPosition \"4n3/5pk1/2R3p1/4K2p/5P2/6PP/8/8 b - - 0 45\"]\n[Timezone \"UTC\"]\n[ECO \"A46\"]\n[ECOUrl \"https://www.chess.com/openings/Indian-Game-Knights-Variation...4.Bg2-Bd6-5.O-O-O-O-6.c4\"]\n[UTCDate \"2025.08.01\"]\n[UTCTime \"15:56:46\"]\n[WhiteElo \"2939\"]\n[BlackElo \"2854\"]\n[TimeControl \"600\"]\n[Termination \"MagnusCarlsen won by resignation\"]\n[StartTime \"15:56:46\"]\n[EndDate \"2025.08.01\"]\n[EndTime \"16:08:57\"]\n[Link \"https://www.chess.com/game/live/141366329594\"]\n\n1. d4 {[%clk 0:09:58]} 1... Nf6 {[%clk 0:09:59]} 2. c4 {[%clk 0:09:56.7]} 2... e6 {[%clk 0:09:58.4]} 3. Nf3 {[%clk 0:09:51.4]} 3... d5 {[%clk 0:09:57.8]} 4. g3 {[%clk 0:09:50.8]} 4... Bd6 {[%clk 0:09:46.4]} 5. Bg2 {[%clk 0:09:48.2]} 5... O-O {[%clk 0:09:45.4]} 6. O-O {[%clk 0:09:47.9]} 6... Nc6 {[%clk 0:09:43.6]} 7. Nc3 {[%clk 0:09:16.7]} 7... dxc4 {[%clk 0:09:36.5]} 8. Qa4 {[%clk 0:09:07.2]} 8... e5 {[%clk 0:09:15.5]} 9. d5 {[%clk 0:09:04.4]} 9... Nb4 {[%clk 0:08:43.2]} 10. Nxe5 {[%clk 0:08:52.3]} 10... Nbxd5 {[%clk 0:08:16.7]} 11. Nxc4 {[%clk 0:08:45.1]} 11... Nxc3 {[%clk 0:08:05.7]} 12. bxc3 {[%clk 0:08:45]} 12... Bc5 {[%clk 0:07:56]} 13. Be3 {[%clk 0:08:34.1]} 13... Qe7 {[%clk 0:07:44.6]} 14. Rab1 {[%clk 0:07:47.3]} 14... c6 {[%clk 0:07:25.7]} 15. Bxc5 {[%clk 0:07:42.6]} 15... Qxc5 {[%clk 0:07:25.6]} 16. Qb4 {[%clk 0:07:41.8]} 16... Qh5 {[%clk 0:07:06.1]} 17. Bf3 {[%clk 0:07:12.4]} 17... Bg4 {[%clk 0:06:49.2]} 18. Qxb7 {[%clk 0:07:10.2]} 18... Bxf3 {[%clk 0:06:40.8]} 19. exf3 {[%clk 0:07:10.1]} 19... Qxf3 {[%clk 0:06:30.7]} 20. Ne5 {[%clk 0:07:08.9]} 20... Qxc3 {[%clk 0:06:29.2]} 21. Nxc6 {[%clk 0:07:08.1]} 21... Qa3 {[%clk 0:05:40.4]} 22. Nb8 {[%clk 0:06:50.9]} 22... Raxb8 {[%clk 0:05:19.9]} 23. Qxb8 {[%clk 0:06:50.1]} 23... Qxa2 {[%clk 0:05:13.1]} 24. Qe5 {[%clk 0:06:27.3]} 24... h5 {[%clk 0:04:40.9]} 25. Rb8 {[%clk 0:06:24.1]} 25... Rxb8 {[%clk 0:04:36.5]} 26. Qxb8+ {[%clk 0:06:21.5]} 26... Kh7 {[%clk 0:04:36]} 27. Qb1+ {[%clk 0:06:21.2]} 27... Qxb1 {[%clk 0:04:31.2]} 28. Rxb1 {[%clk 0:06:21.1]} 28... g6 {[%clk 0:04:12.9]} 29. Ra1 {[%clk 0:06:19.9]} 29... Kg7 {[%clk 0:04:12.8]} 30. Rxa7 {[%clk 0:06:19.4]} 30... Ne4 {[%clk 0:04:12.2]} 31. Kg2 {[%clk 0:06:03.5]} 31... Ng5 {[%clk 0:04:11.8]} 32. Ra5 {[%clk 0:05:56.4]} 32... Ne4 {[%clk 0:04:09.6]} 33. Kf3 {[%clk 0:05:52.3]} 33... Nf6 {[%clk 0:04:07.2]} 34. h3 {[%clk 0:05:48]} 34... Nd7 {[%clk 0:04:00.6]} 35. Ke4 {[%clk 0:05:44.3]} 35... Kf6 {[%clk 0:03:55.8]} 36. Ra6+ {[%clk 0:05:38.8]} 36... Kg7 {[%clk 0:03:55.2]} 37. Kd5 {[%clk 0:05:37.6]} 37... Nf6+ {[%clk 0:03:53.6]} 38. Ke5 {[%clk 0:05:31.6]} 38... Nd7+ {[%clk 0:03:53]} 39. Kd6 {[%clk 0:05:31.1]} 39... Nf6 {[%clk 0:03:52.7]} 40. Ra4 {[%clk 0:05:30.6]} 40... Kf8 {[%clk 0:03:48.6]} 41. f3 {[%clk 0:05:02.4]} 41... Ne8+ {[%clk 0:03:39.9]} 42. Ke5 {[%clk 0:04:59.1]} 42... Kg7 {[%clk 0:03:39.1]} 43. Ra6 {[%clk 0:04:53.4]} 43... Nc7 {[%clk 0:03:37.6]} 44. Rc6 {[%clk 0:04:52.4]} 44... Ne8 {[%clk 0:03:32.5]} 45. f4 {[%clk 0:04:51.5]} 1-0\n",
+          "end_time": 1754064537,
+          "qec_analysis": {
+            "entanglement_opportunities": [
+              {
+                "move_number": 29,
+                "move": "dxc4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 39,
+                "move": "Nxe5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 41,
+                "move": "Nbxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 43,
+                "move": "Nxc4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 45,
+                "move": "Nxc3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 47,
+                "move": "bxc3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 61,
+                "move": "Bxc5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 63,
+                "move": "Qxc5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 73,
+                "move": "Qxb7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 75,
+                "move": "Bxf3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 77,
+                "move": "exf3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 79,
+                "move": "Qxf3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 83,
+                "move": "Qxc3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 85,
+                "move": "Nxc6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 91,
+                "move": "Raxb8",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 93,
+                "move": "Qxb8",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 95,
+                "move": "Qxa2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 103,
+                "move": "Rxb8",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 105,
+                "move": "Qxb8+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 112,
+                "move": "Qxb1",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 114,
+                "move": "Rxb1",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 122,
+                "move": "Rxa7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              }
+            ],
+            "forced_move_patterns": [
+              {
+                "move_number": 105,
+                "move": "Qxb8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 110,
+                "move": "Qb1+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 147,
+                "move": "Ra6+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 153,
+                "move": "Nf6+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 157,
+                "move": "Nd7+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 170,
+                "move": "Ne8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              }
+            ],
+            "reactive_escape_patterns": [
+              {
+                "move_number": 107,
+                "move": "Kh7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 120,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 126,
+                "move": "Kg2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 134,
+                "move": "Kf3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 143,
+                "move": "Ke4",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 145,
+                "move": "Kf6",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 149,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 151,
+                "move": "Kd5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 155,
+                "move": "Ke5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 160,
+                "move": "Kd6",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 166,
+                "move": "Kf8",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 172,
+                "move": "Ke5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 174,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              }
+            ],
+            "tactical_combinations": [],
+            "positional_themes": [
+              "endgame_phase"
+            ],
+            "time_pressure": {
+              "time_control": "600",
+              "time_class": "rapid",
+              "time_pressure_level": "medium"
+            },
+            "performance_metrics": {
+              "time_class": "rapid",
+              "rated": true,
+              "rules": "chess",
+              "result": ""
+            }
+          }
+        },
+        {
+          "id": "141366826560",
+          "url": "https://www.chess.com/game/live/141366826560",
+          "white": {
+            "rating": 2856,
+            "result": "repetition",
+            "@id": "https://api.chess.com/pub/player/firouzja2003",
+            "username": "Firouzja2003",
+            "uuid": "12120a32-f21e-11e7-805e-000000000000"
+          },
+          "black": {
+            "rating": 2937,
+            "result": "repetition",
+            "@id": "https://api.chess.com/pub/player/magnuscarlsen",
+            "username": "MagnusCarlsen",
+            "uuid": "a2761738-b155-11df-8018-000000000000"
+          },
+          "result": "",
+          "time_control": "600",
+          "time_class": "rapid",
+          "rated": true,
+          "rules": "chess",
+          "fen": "8/1p6/6p1/1p2k2p/5p1P/PPP2P1K/8/8 w - - 9 45",
+          "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2025.08.01\"]\n[Round \"-\"]\n[White \"Firouzja2003\"]\n[Black \"MagnusCarlsen\"]\n[Result \"1/2-1/2\"]\n[CurrentPosition \"8/1p6/6p1/1p2k2p/5p1P/PPP2P1K/8/8 w - - 9 45\"]\n[Timezone \"UTC\"]\n[ECO \"C58\"]\n[ECOUrl \"https://www.chess.com/openings/Italian-Game-Knight-Attack-Polerio-Bishop-Check-Line-6...Bd7-7.Qe2\"]\n[UTCDate \"2025.08.01\"]\n[UTCTime \"16:10:48\"]\n[WhiteElo \"2856\"]\n[BlackElo \"2937\"]\n[TimeControl \"600\"]\n[Termination \"Game drawn by repetition\"]\n[StartTime \"16:10:48\"]\n[EndDate \"2025.08.01\"]\n[EndTime \"16:28:46\"]\n[Link \"https://www.chess.com/game/live/141366826560\"]\n\n1. e4 {[%clk 0:09:59.7]} 1... e5 {[%clk 0:09:58.4]} 2. Nf3 {[%clk 0:09:59.1]} 2... Nc6 {[%clk 0:09:57.2]} 3. Bc4 {[%clk 0:09:58.2]} 3... Nf6 {[%clk 0:09:56.2]} 4. Ng5 {[%clk 0:09:57.6]} 4... d5 {[%clk 0:09:53.1]} 5. exd5 {[%clk 0:09:57.2]} 5... Na5 {[%clk 0:09:52]} 6. Bb5+ {[%clk 0:09:56.5]} 6... Bd7 {[%clk 0:09:49.4]} 7. Qe2 {[%clk 0:09:45.9]} 7... Bd6 {[%clk 0:09:36.4]} 8. Nc3 {[%clk 0:09:31.2]} 8... c6 {[%clk 0:09:20.5]} 9. Nge4 {[%clk 0:08:36.8]} 9... Nxe4 {[%clk 0:09:08.7]} 10. Nxe4 {[%clk 0:08:36.7]} 10... Be7 {[%clk 0:09:02.4]} 11. dxc6 {[%clk 0:07:50.4]} 11... Nxc6 {[%clk 0:09:00.9]} 12. Bxc6 {[%clk 0:06:43.1]} 12... Bxc6 {[%clk 0:08:59.6]} 13. d3 {[%clk 0:06:35.4]} 13... O-O {[%clk 0:07:35.3]} 14. O-O {[%clk 0:06:29.6]} 14... f5 {[%clk 0:07:33.8]} 15. Nc3 {[%clk 0:06:27.5]} 15... Qd6 {[%clk 0:07:14.2]} 16. f3 {[%clk 0:06:14.4]} 16... Rae8 {[%clk 0:07:12.3]} 17. Be3 {[%clk 0:06:12]} 17... a6 {[%clk 0:07:04.8]} 18. Kh1 {[%clk 0:05:56.3]} 18... Qg6 {[%clk 0:07:03.8]} 19. Qf2 {[%clk 0:05:40.1]} 19... Rf7 {[%clk 0:06:36.2]} 20. Bc5 {[%clk 0:05:13.8]} 20... Bf6 {[%clk 0:06:14.3]} 21. d4 {[%clk 0:04:48.6]} 21... e4 {[%clk 0:05:40.5]} 22. d5 {[%clk 0:04:43.7]} 22... Bd7 {[%clk 0:05:24.2]} 23. Bd4 {[%clk 0:04:03.1]} 23... exf3 {[%clk 0:04:18.4]} 24. gxf3 {[%clk 0:04:01]} 24... Bxd4 {[%clk 0:04:14.9]} 25. Qxd4 {[%clk 0:03:59.4]} 25... f4 {[%clk 0:04:14.3]} 26. Ne4 {[%clk 0:02:17.2]} 26... Bf5 {[%clk 0:04:12.9]} 27. Rae1 {[%clk 0:01:31.9]} 27... Rfe7 {[%clk 0:04:11.5]} 28. Rg1 {[%clk 0:00:34.9]} 28... Rxe4 {[%clk 0:04:08.7]} 29. Rxg6 {[%clk 0:00:29.1]} 29... Rxd4 {[%clk 0:04:07.5]} 30. Rxe8+ {[%clk 0:00:28.4]} 30... Kf7 {[%clk 0:04:07.2]} 31. Rge6 {[%clk 0:00:27.3]} 31... Bxe6 {[%clk 0:04:04.3]} 32. Rxe6 {[%clk 0:00:27.2]} 32... Rxd5 {[%clk 0:03:53.1]} 33. Rb6 {[%clk 0:00:26.7]} 33... Rb5 {[%clk 0:03:22.1]} 34. Rxb5 {[%clk 0:00:26.2]} 34... axb5 {[%clk 0:03:22]} 35. Kg2 {[%clk 0:00:25.9]} 35... Ke6 {[%clk 0:03:00.6]} 36. c3 {[%clk 0:00:18.7]} 36... Kf5 {[%clk 0:02:44.8]} 37. h4 {[%clk 0:00:17.4]} 37... g6 {[%clk 0:02:37.5]} 38. Kh3 {[%clk 0:00:16.9]} 38... h6 {[%clk 0:02:32.4]} 39. b3 {[%clk 0:00:16.4]} 39... h5 {[%clk 0:02:15.7]} 40. a3 {[%clk 0:00:15.5]} 40... Ke5 {[%clk 0:02:13.8]} 41. Kg2 {[%clk 0:00:14.9]} 41... Kd5 {[%clk 0:02:07.3]} 42. Kh3 {[%clk 0:00:14.5]} 42... Ke5 {[%clk 0:02:05.4]} 43. Kg2 {[%clk 0:00:14.3]} 43... Kf5 {[%clk 0:02:03.6]} 44. Kh3 {[%clk 0:00:14]} 44... Ke5 {[%clk 0:02:02.9]} 1/2-1/2\n",
+          "end_time": 1754065726,
+          "qec_analysis": {
+            "entanglement_opportunities": [
+              {
+                "move_number": 17,
+                "move": "exd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 36,
+                "move": "Nxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 38,
+                "move": "Nxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 42,
+                "move": "dxc6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 44,
+                "move": "Nxc6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 46,
+                "move": "Bxc6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 48,
+                "move": "Bxc6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 93,
+                "move": "exf3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 95,
+                "move": "gxf3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 98,
+                "move": "Bxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 100,
+                "move": "Qxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 114,
+                "move": "Rxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 116,
+                "move": "Rxg6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 118,
+                "move": "Rxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 120,
+                "move": "Rxe8+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 126,
+                "move": "Bxe6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 128,
+                "move": "Rxe6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 130,
+                "move": "Rxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 136,
+                "move": "Rxb5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 138,
+                "move": "axb5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              }
+            ],
+            "forced_move_patterns": [
+              {
+                "move_number": 22,
+                "move": "Bb5+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 120,
+                "move": "Rxe8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              }
+            ],
+            "reactive_escape_patterns": [
+              {
+                "move_number": 71,
+                "move": "Kh1",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 122,
+                "move": "Kf7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 141,
+                "move": "Kg2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 143,
+                "move": "Ke6",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 147,
+                "move": "Kf5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 153,
+                "move": "Kh3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 163,
+                "move": "Ke5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 165,
+                "move": "Kg2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 167,
+                "move": "Kd5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 169,
+                "move": "Kh3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 171,
+                "move": "Ke5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 173,
+                "move": "Kg2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 175,
+                "move": "Kf5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 177,
+                "move": "Kh3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 180,
+                "move": "Ke5",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              }
+            ],
+            "tactical_combinations": [],
+            "positional_themes": [
+              "endgame_phase"
+            ],
+            "time_pressure": {
+              "time_control": "600",
+              "time_class": "rapid",
+              "time_pressure_level": "medium"
+            },
+            "performance_metrics": {
+              "time_class": "rapid",
+              "rated": true,
+              "rules": "chess",
+              "result": ""
+            }
+          }
+        },
+        {
+          "id": "141367810148",
+          "url": "https://www.chess.com/game/live/141367810148",
+          "white": {
+            "rating": 2935,
+            "result": "repetition",
+            "@id": "https://api.chess.com/pub/player/magnuscarlsen",
+            "username": "MagnusCarlsen",
+            "uuid": "a2761738-b155-11df-8018-000000000000"
+          },
+          "black": {
+            "rating": 2858,
+            "result": "repetition",
+            "@id": "https://api.chess.com/pub/player/firouzja2003",
+            "username": "Firouzja2003",
+            "uuid": "12120a32-f21e-11e7-805e-000000000000"
+          },
+          "result": "",
+          "time_control": "600",
+          "time_class": "rapid",
+          "rated": true,
+          "rules": "chess",
+          "fen": "6k1/8/5p2/1p3P1p/pBpN3P/P1Pb4/1b1K4/8 w - - 18 59",
+          "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2025.08.01\"]\n[Round \"-\"]\n[White \"MagnusCarlsen\"]\n[Black \"Firouzja2003\"]\n[Result \"1/2-1/2\"]\n[CurrentPosition \"6k1/8/5p2/1p3P1p/pBpN3P/P1Pb4/1b1K4/8 w - - 18 59\"]\n[Timezone \"UTC\"]\n[ECO \"B10\"]\n[ECOUrl \"https://www.chess.com/openings/Caro-Kann-Defense-Breyer-Variation...6.Bg2-Ne7-7.O-O-O-O-8.Re1\"]\n[UTCDate \"2025.08.01\"]\n[UTCTime \"16:38:39\"]\n[WhiteElo \"2935\"]\n[BlackElo \"2858\"]\n[TimeControl \"600\"]\n[Termination \"Game drawn by repetition\"]\n[StartTime \"16:38:39\"]\n[EndDate \"2025.08.01\"]\n[EndTime \"16:57:09\"]\n[Link \"https://www.chess.com/game/live/141367810148\"]\n\n1. e4 {[%clk 0:09:59.4]} 1... c6 {[%clk 0:09:57]} 2. Nf3 {[%clk 0:09:55.5]} 2... d5 {[%clk 0:09:56.1]} 3. d3 {[%clk 0:09:55.2]} 3... g6 {[%clk 0:09:51.7]} 4. Nbd2 {[%clk 0:09:34.4]} 4... Bg7 {[%clk 0:09:48.8]} 5. g3 {[%clk 0:09:34]} 5... e5 {[%clk 0:09:47]} 6. Bg2 {[%clk 0:09:33.6]} 6... Ne7 {[%clk 0:09:46.4]} 7. O-O {[%clk 0:09:33]} 7... O-O {[%clk 0:09:45.8]} 8. Re1 {[%clk 0:09:32.6]} 8... Qc7 {[%clk 0:09:35.2]} 9. c3 {[%clk 0:09:06.9]} 9... a5 {[%clk 0:09:27.4]} 10. d4 {[%clk 0:09:01.6]} 10... exd4 {[%clk 0:08:50.9]} 11. Nxd4 {[%clk 0:08:59.7]} 11... Na6 {[%clk 0:08:47.3]} 12. exd5 {[%clk 0:07:55.6]} 12... Nxd5 {[%clk 0:08:46.4]} 13. Nc4 {[%clk 0:07:52.4]} 13... Nc5 {[%clk 0:08:27.5]} 14. Bxd5 {[%clk 0:07:50.1]} 14... cxd5 {[%clk 0:08:26.8]} 15. Bf4 {[%clk 0:07:49.8]} 15... Qd8 {[%clk 0:08:17.2]} 16. Bd6 {[%clk 0:07:07]} 16... dxc4 {[%clk 0:08:01.6]} 17. Bxc5 {[%clk 0:07:05.4]} 17... Re8 {[%clk 0:07:46.4]} 18. Qf3 {[%clk 0:05:57.6]} 18... h5 {[%clk 0:07:11.1]} 19. h4 {[%clk 0:05:54.9]} 19... Ra6 {[%clk 0:05:53.6]} 20. Rxe8+ {[%clk 0:05:41.7]} 20... Qxe8 {[%clk 0:05:53.5]} 21. Qe2 {[%clk 0:05:41]} 21... Qxe2 {[%clk 0:05:15.1]} 22. Nxe2 {[%clk 0:05:40.2]} 22... Bg4 {[%clk 0:05:12.2]} 23. Kf1 {[%clk 0:05:38.4]} 23... Re6 {[%clk 0:04:53.1]} 24. Nf4 {[%clk 0:05:34.6]} 24... Re5 {[%clk 0:04:52.4]} 25. Ba3 {[%clk 0:05:15.6]} 25... b5 {[%clk 0:04:43.6]} 26. Re1 {[%clk 0:05:14.5]} 26... Bf5 {[%clk 0:04:01]} 27. Rxe5 {[%clk 0:05:06.9]} 27... Bxe5 {[%clk 0:04:00.9]} 28. Ke2 {[%clk 0:05:04.9]} 28... f6 {[%clk 0:03:10]} 29. Nd5 {[%clk 0:04:58]} 29... Kf7 {[%clk 0:03:07]} 30. f4 {[%clk 0:04:45.1]} 30... Bb8 {[%clk 0:03:05.8]} 31. Bc5 {[%clk 0:04:44.8]} 31... Be4 {[%clk 0:02:55.2]} 32. Nb6 {[%clk 0:04:35.7]} 32... a4 {[%clk 0:02:26.6]} 33. Nd7 {[%clk 0:04:17]} 33... Bc7 {[%clk 0:02:25.8]} 34. Bd4 {[%clk 0:04:14.8]} 34... Bd8 {[%clk 0:02:18.6]} 35. Ke3 {[%clk 0:03:57.1]} 35... Bc6 {[%clk 0:02:16.7]} 36. Nc5 {[%clk 0:03:53.9]} 36... Be7 {[%clk 0:02:11.8]} 37. a3 {[%clk 0:03:50.2]} 37... Bd5 {[%clk 0:02:07.1]} 38. Kf2 {[%clk 0:03:39.5]} 38... Bd6 {[%clk 0:02:02.6]} 39. Ke3 {[%clk 0:03:34.4]} 39... g5 {[%clk 0:01:56.9]} 40. Ne4 {[%clk 0:03:30.8]} 40... gxf4+ {[%clk 0:01:38.8]} 41. gxf4 {[%clk 0:03:29.3]} 41... Be7 {[%clk 0:01:36.7]} 42. f5 {[%clk 0:03:22.2]} 42... Bc6 {[%clk 0:01:22.3]} 43. Bb6 {[%clk 0:02:56.4]} 43... Bd7 {[%clk 0:01:20.5]} 44. Kf4 {[%clk 0:02:55]} 44... Bc6 {[%clk 0:01:04.5]} 45. Ke3 {[%clk 0:02:23.9]} 45... Bd7 {[%clk 0:01:02]} 46. Kf4 {[%clk 0:02:23.6]} 46... Bf8 {[%clk 0:01:01.4]} 47. Ng3 {[%clk 0:01:59.2]} 47... Bh6+ {[%clk 0:00:57.5]} 48. Ke4 {[%clk 0:01:54.5]} 48... Bc1 {[%clk 0:00:54.4]} 49. Bc5 {[%clk 0:01:53.2]} 49... Bxb2 {[%clk 0:00:48.7]} 50. Ne2 {[%clk 0:01:47.6]} 50... Bc6+ {[%clk 0:00:45.1]} 51. Ke3 {[%clk 0:01:45.7]} 51... Bg2 {[%clk 0:00:41]} 52. Kd2 {[%clk 0:01:42.9]} 52... Be4 {[%clk 0:00:38.4]} 53. Nd4 {[%clk 0:01:40.8]} 53... Bd3 {[%clk 0:00:34.8]} 54. Bb4 {[%clk 0:01:37.9]} 54... Kg8 {[%clk 0:00:28.8]} 55. Bc5 {[%clk 0:01:34.9]} 55... Kg7 {[%clk 0:00:26.7]} 56. Bb4 {[%clk 0:01:30.5]} 56... Kg8 {[%clk 0:00:25.9]} 57. Bc5 {[%clk 0:01:27.7]} 57... Kg7 {[%clk 0:00:25.5]} 58. Bb4 {[%clk 0:01:26.5]} 58... Kg8 {[%clk 0:00:25]} 1/2-1/2\n",
+          "end_time": 1754067429,
+          "qec_analysis": {
+            "entanglement_opportunities": [
+              {
+                "move_number": 43,
+                "move": "exd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 45,
+                "move": "Nxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 49,
+                "move": "exd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 51,
+                "move": "Nxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 57,
+                "move": "Bxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 59,
+                "move": "cxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 68,
+                "move": "dxc4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 70,
+                "move": "Bxc5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 82,
+                "move": "Rxe8+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 84,
+                "move": "Qxe8",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 89,
+                "move": "Qxe2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 91,
+                "move": "Nxe2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 112,
+                "move": "Rxe5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 114,
+                "move": "Bxe5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 170,
+                "move": "gxf4+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 172,
+                "move": "gxf4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 208,
+                "move": "Bxb2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              }
+            ],
+            "forced_move_patterns": [
+              {
+                "move_number": 82,
+                "move": "Rxe8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 170,
+                "move": "gxf4+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 200,
+                "move": "Bh6+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 212,
+                "move": "Bc6+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              }
+            ],
+            "reactive_escape_patterns": [
+              {
+                "move_number": 95,
+                "move": "Kf1",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 116,
+                "move": "Ke2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 124,
+                "move": "Kf7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 148,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 160,
+                "move": "Kf2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 164,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 184,
+                "move": "Kf4",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 189,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 194,
+                "move": "Kf4",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 202,
+                "move": "Ke4",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 214,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 219,
+                "move": "Kd2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 229,
+                "move": "Kg8",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 233,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 237,
+                "move": "Kg8",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 241,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 245,
+                "move": "Kg8",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              }
+            ],
+            "tactical_combinations": [],
+            "positional_themes": [
+              "endgame_phase"
+            ],
+            "time_pressure": {
+              "time_control": "600",
+              "time_class": "rapid",
+              "time_pressure_level": "medium"
+            },
+            "performance_metrics": {
+              "time_class": "rapid",
+              "rated": true,
+              "rules": "chess",
+              "result": ""
+            }
+          }
+        },
+        {
+          "id": "141368534472",
+          "url": "https://www.chess.com/game/live/141368534472",
+          "white": {
+            "rating": 2852,
+            "result": "checkmated",
+            "@id": "https://api.chess.com/pub/player/firouzja2003",
+            "username": "Firouzja2003",
+            "uuid": "12120a32-f21e-11e7-805e-000000000000"
+          },
+          "black": {
+            "rating": 2941,
+            "result": "win",
+            "@id": "https://api.chess.com/pub/player/magnuscarlsen",
+            "username": "MagnusCarlsen",
+            "uuid": "a2761738-b155-11df-8018-000000000000"
+          },
+          "result": "",
+          "time_control": "600",
+          "time_class": "rapid",
+          "rated": true,
+          "rules": "chess",
+          "fen": "8/1p1rRp1k/2p3pp/8/P3Q3/3nKN1P/5qP1/8 w - - 2 35",
+          "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2025.08.01\"]\n[Round \"-\"]\n[White \"Firouzja2003\"]\n[Black \"MagnusCarlsen\"]\n[Result \"0-1\"]\n[CurrentPosition \"8/1p1rRp1k/2p3pp/8/P3Q3/3nKN1P/5qP1/8 w - - 2 35\"]\n[Timezone \"UTC\"]\n[ECO \"C53\"]\n[ECOUrl \"https://www.chess.com/openings/Giuoco-Piano-Game-Main-Line-Giuoco-Pianissimo-Variation-5...h6\"]\n[UTCDate \"2025.08.01\"]\n[UTCTime \"16:59:18\"]\n[WhiteElo \"2852\"]\n[BlackElo \"2941\"]\n[TimeControl \"600\"]\n[Termination \"MagnusCarlsen won by checkmate\"]\n[StartTime \"16:59:18\"]\n[EndDate \"2025.08.01\"]\n[EndTime \"17:15:25\"]\n[Link \"https://www.chess.com/game/live/141368534472\"]\n\n1. e4 {[%clk 0:09:58.8]} 1... e5 {[%clk 0:09:54.2]} 2. Nf3 {[%clk 0:09:58]} 2... Nc6 {[%clk 0:09:52.9]} 3. Bc4 {[%clk 0:09:57.8]} 3... Bc5 {[%clk 0:09:45.4]} 4. c3 {[%clk 0:09:55.5]} 4... Nf6 {[%clk 0:09:40.5]} 5. d3 {[%clk 0:09:55]} 5... h6 {[%clk 0:09:38.5]} 6. b4 {[%clk 0:09:53.5]} 6... Bb6 {[%clk 0:09:37.5]} 7. a4 {[%clk 0:09:51]} 7... a6 {[%clk 0:09:36.7]} 8. O-O {[%clk 0:09:46.4]} 8... O-O {[%clk 0:09:34.1]} 9. Nbd2 {[%clk 0:09:18.8]} 9... d6 {[%clk 0:09:31]} 10. h3 {[%clk 0:09:09.2]} 10... Ba7 {[%clk 0:09:28.5]} 11. Re1 {[%clk 0:09:04.7]} 11... Ne7 {[%clk 0:09:27.3]} 12. Nf1 {[%clk 0:08:20.9]} 12... Ng6 {[%clk 0:09:24.5]} 13. Ng3 {[%clk 0:08:19.9]} 13... c6 {[%clk 0:09:18.4]} 14. Bb3 {[%clk 0:08:09.5]} 14... d5 {[%clk 0:09:10.6]} 15. exd5 {[%clk 0:07:30.1]} 15... Nxd5 {[%clk 0:09:05.3]} 16. Bd2 {[%clk 0:07:28.9]} 16... Re8 {[%clk 0:09:01.7]} 17. Qc2 {[%clk 0:05:36.2]} 17... Be6 {[%clk 0:08:52.4]} 18. Rad1 {[%clk 0:04:57.1]} 18... Qc7 {[%clk 0:08:32.3]} 19. c4 {[%clk 0:04:22.6]} 19... Ndf4 {[%clk 0:08:18.1]} 20. Bxf4 {[%clk 0:03:55.9]} 20... Nxf4 {[%clk 0:07:59.2]} 21. c5 {[%clk 0:03:29.3]} 21... Bxb3 {[%clk 0:07:31.1]} 22. Qxb3 {[%clk 0:03:29.2]} 22... a5 {[%clk 0:07:30.7]} 23. d4 {[%clk 0:02:56.8]} 23... exd4 {[%clk 0:07:08.4]} 24. Rxe8+ {[%clk 0:02:51.7]} 24... Rxe8 {[%clk 0:07:06.8]} 25. Rxd4 {[%clk 0:02:51.2]} 25... Rd8 {[%clk 0:04:45.4]} 26. Re4 {[%clk 0:02:44.4]} 26... axb4 {[%clk 0:04:19.1]} 27. Rxb4 {[%clk 0:02:15.3]} 27... Rd7 {[%clk 0:04:15.8]} 28. Re4 {[%clk 0:01:51.9]} 28... Bxc5 {[%clk 0:04:04.4]} 29. Qc4 {[%clk 0:01:16.2]} 29... Bxf2+ {[%clk 0:03:29.1]} 30. Kxf2 {[%clk 0:00:54.3]} 30... Nd3+ {[%clk 0:03:28.3]} 31. Ke3 {[%clk 0:00:53.1]} 31... Qxg3 {[%clk 0:03:27.5]} 32. Re8+ {[%clk 0:00:50.3]} 32... Kh7 {[%clk 0:03:25.9]} 33. Qe4+ {[%clk 0:00:50.2]} 33... g6 {[%clk 0:03:18.3]} 34. Re7 {[%clk 0:00:49.1]} 34... Qf2# {[%clk 0:03:16.2]} 0-1\n",
+          "end_time": 1754068525,
+          "qec_analysis": {
+            "entanglement_opportunities": [
+              {
+                "move_number": 61,
+                "move": "exd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 63,
+                "move": "Nxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 81,
+                "move": "Bxf4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 83,
+                "move": "Nxf4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 87,
+                "move": "Bxb3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 89,
+                "move": "Qxb3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 95,
+                "move": "exd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 97,
+                "move": "Rxe8+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 99,
+                "move": "Rxe8",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 101,
+                "move": "Rxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 107,
+                "move": "axb4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 109,
+                "move": "Rxb4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 115,
+                "move": "Bxc5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 119,
+                "move": "Bxf2+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 121,
+                "move": "Kxf2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 127,
+                "move": "Qxg3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              }
+            ],
+            "forced_move_patterns": [
+              {
+                "move_number": 97,
+                "move": "Rxe8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 119,
+                "move": "Bxf2+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 123,
+                "move": "Nd3+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 129,
+                "move": "Re8+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 133,
+                "move": "Qe4+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 139,
+                "move": "Qf2#",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              }
+            ],
+            "reactive_escape_patterns": [
+              {
+                "move_number": 121,
+                "move": "Kxf2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 125,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 131,
+                "move": "Kh7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              }
+            ],
+            "tactical_combinations": [],
+            "positional_themes": [
+              "endgame_phase"
+            ],
+            "time_pressure": {
+              "time_control": "600",
+              "time_class": "rapid",
+              "time_pressure_level": "medium"
+            },
+            "performance_metrics": {
+              "time_class": "rapid",
+              "rated": true,
+              "rules": "chess",
+              "result": ""
+            }
+          }
+        },
+        {
+          "id": "141369625754",
+          "url": "https://www.chess.com/game/live/141369625754",
+          "white": {
+            "rating": 2862,
+            "result": "win",
+            "@id": "https://api.chess.com/pub/player/firouzja2003",
+            "username": "Firouzja2003",
+            "uuid": "12120a32-f21e-11e7-805e-000000000000"
+          },
+          "black": {
+            "rating": 2931,
+            "result": "resigned",
+            "@id": "https://api.chess.com/pub/player/magnuscarlsen",
+            "username": "MagnusCarlsen",
+            "uuid": "a2761738-b155-11df-8018-000000000000"
+          },
+          "result": "",
+          "time_control": "600",
+          "time_class": "rapid",
+          "rated": true,
+          "rules": "chess",
+          "fen": "8/5pk1/5nb1/p3Q3/6p1/P3K1Q1/8/8 b - - 2 54",
+          "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2025.08.01\"]\n[Round \"-\"]\n[White \"Firouzja2003\"]\n[Black \"MagnusCarlsen\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/5pk1/5nb1/p3Q3/6p1/P3K1Q1/8/8 b - - 2 54\"]\n[Timezone \"UTC\"]\n[ECO \"D02\"]\n[ECOUrl \"https://www.chess.com/openings/Queens-Pawn-Opening-Pseudo-Catalan-Variation-3...c5-4.Bg2-cxd4-5.O-O\"]\n[UTCDate \"2025.08.01\"]\n[UTCTime \"17:31:19\"]\n[WhiteElo \"2862\"]\n[BlackElo \"2931\"]\n[TimeControl \"600\"]\n[Termination \"Firouzja2003 won by resignation\"]\n[StartTime \"17:31:19\"]\n[EndDate \"2025.08.01\"]\n[EndTime \"17:49:05\"]\n[Link \"https://www.chess.com/game/live/141369625754\"]\n\n1. d4 {[%clk 0:09:59]} 1... d5 {[%clk 0:09:57.6]} 2. g3 {[%clk 0:09:57.4]} 2... Nf6 {[%clk 0:09:42.2]} 3. Bg2 {[%clk 0:09:56.4]} 3... c5 {[%clk 0:09:41.7]} 4. Nf3 {[%clk 0:09:55.2]} 4... cxd4 {[%clk 0:09:40.5]} 5. O-O {[%clk 0:09:54]} 5... h6 {[%clk 0:09:39.9]} 6. b3 {[%clk 0:09:50.5]} 6... h5 {[%clk 0:09:38.5]} 7. c3 {[%clk 0:09:00.4]} 7... Nc6 {[%clk 0:09:22.4]} 8. cxd4 {[%clk 0:08:58.1]} 8... Bf5 {[%clk 0:09:21]} 9. Nc3 {[%clk 0:08:01.3]} 9... e6 {[%clk 0:09:20]} 10. Bg5 {[%clk 0:08:00.4]} 10... Be7 {[%clk 0:09:16.9]} 11. Nh4 {[%clk 0:07:30.8]} 11... Bh7 {[%clk 0:09:15.7]} 12. e3 {[%clk 0:07:29.5]} 12... Rc8 {[%clk 0:09:06.9]} 13. Na4 {[%clk 0:07:09.6]} 13... Ng4 {[%clk 0:08:50]} 14. Bxe7 {[%clk 0:07:03.3]} 14... Qxe7 {[%clk 0:08:49.9]} 15. Rc1 {[%clk 0:06:57.4]} 15... O-O {[%clk 0:08:44]} 16. Nf3 {[%clk 0:06:14.9]} 16... Nf6 {[%clk 0:08:34.9]} 17. Ng5 {[%clk 0:06:03.3]} 17... Bf5 {[%clk 0:08:24.6]} 18. Qd2 {[%clk 0:05:51.5]} 18... Rc7 {[%clk 0:08:06.3]} 19. Nc5 {[%clk 0:05:30.4]} 19... Rfc8 {[%clk 0:07:57.5]} 20. Rc3 {[%clk 0:04:41.3]} 20... Nb4 {[%clk 0:07:36]} 21. a3 {[%clk 0:04:07.4]} 21... Na6 {[%clk 0:07:28.3]} 22. b4 {[%clk 0:03:43.3]} 22... b6 {[%clk 0:07:26.5]} 23. Na4 {[%clk 0:03:42.5]} 23... Qd7 {[%clk 0:07:17.6]} 24. Rxc7 {[%clk 0:03:29.1]} 24... Qxc7 {[%clk 0:07:17.5]} 25. b5 {[%clk 0:02:37.1]} 25... Nb8 {[%clk 0:07:11.8]} 26. Qb4 {[%clk 0:02:29.4]} 26... Nbd7 {[%clk 0:06:48.9]} 27. f3 {[%clk 0:02:08]} 27... Bd3 {[%clk 0:06:23]} 28. Re1 {[%clk 0:02:07.1]} 28... Nf8 {[%clk 0:05:41.1]} 29. Nb2 {[%clk 0:01:59.7]} 29... Bg6 {[%clk 0:05:34.6]} 30. Bf1 {[%clk 0:01:21]} 30... Qc2 {[%clk 0:05:31]} 31. Nd1 {[%clk 0:01:04.9]} 31... N8h7 {[%clk 0:05:05.6]} 32. Nh3 {[%clk 0:01:02.4]} 32... Bf5 {[%clk 0:05:03]} 33. Ndf2 {[%clk 0:00:57.9]} 33... g5 {[%clk 0:04:51.3]} 34. e4 {[%clk 0:00:36.4]} 34... dxe4 {[%clk 0:04:45.1]} 35. fxe4 {[%clk 0:00:36.3]} 35... Nxe4 {[%clk 0:04:36.2]} 36. Re2 {[%clk 0:00:24.1]} 36... Nxf2 {[%clk 0:03:29.6]} 37. Rxc2 {[%clk 0:00:23.4]} 37... Nxh3+ {[%clk 0:03:29.1]} 38. Bxh3 {[%clk 0:00:23]} 38... Bxc2 {[%clk 0:03:28.7]} 39. d5 {[%clk 0:00:22.7]} 39... g4 {[%clk 0:03:26.1]} 40. Bg2 {[%clk 0:00:21.7]} 40... exd5 {[%clk 0:03:24.3]} 41. Bxd5 {[%clk 0:00:21.1]} 41... Nf6 {[%clk 0:03:17.1]} 42. Bc6 {[%clk 0:00:17.5]} 42... Kg7 {[%clk 0:03:07.8]} 43. Qe7 {[%clk 0:00:16.1]} 43... a5 {[%clk 0:02:52.6]} 44. Qb7 {[%clk 0:00:15.2]} 44... Rd8 {[%clk 0:02:51.1]} 45. Qxb6 {[%clk 0:00:14.7]} 45... Rd1+ {[%clk 0:02:49.7]} 46. Kf2 {[%clk 0:00:13.8]} 46... Rd2+ {[%clk 0:02:47.7]} 47. Ke3 {[%clk 0:00:13.4]} 47... Rxh2 {[%clk 0:02:47.1]} 48. Qc5 {[%clk 0:00:12.3]} 48... h4 {[%clk 0:02:43.3]} 49. b6 {[%clk 0:00:11.2]} 49... hxg3 {[%clk 0:02:38]} 50. b7 {[%clk 0:00:10.8]} 50... g2 {[%clk 0:02:30.6]} 51. Bxg2 {[%clk 0:00:09.8]} 51... Rxg2 {[%clk 0:02:29.9]} 52. b8=Q {[%clk 0:00:08.9]} 52... Rg3+ {[%clk 0:02:29.5]} 53. Qxg3 {[%clk 0:00:08.2]} 53... Bg6 {[%clk 0:02:27.2]} 54. Qce5 {[%clk 0:00:07.7]} 1-0\n",
+          "end_time": 1754070545,
+          "qec_analysis": {
+            "entanglement_opportunities": [
+              {
+                "move_number": 16,
+                "move": "cxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 31,
+                "move": "cxd4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 58,
+                "move": "Bxe7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 60,
+                "move": "Qxe7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 100,
+                "move": "Rxc7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 102,
+                "move": "Qxc7",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 147,
+                "move": "dxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 149,
+                "move": "fxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 151,
+                "move": "Nxe4",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 155,
+                "move": "Nxf2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 157,
+                "move": "Rxc2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 159,
+                "move": "Nxh3+",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 161,
+                "move": "Bxh3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 164,
+                "move": "Bxc2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 172,
+                "move": "exd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 174,
+                "move": "Bxd5",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 190,
+                "move": "Qxb6",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 200,
+                "move": "Rxh2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 208,
+                "move": "hxg3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 215,
+                "move": "Bxg2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 217,
+                "move": "Rxg2",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              },
+              {
+                "move_number": 223,
+                "move": "Qxg3",
+                "type": "capture_entanglement",
+                "description": "Capture move that could create entanglement"
+              }
+            ],
+            "forced_move_patterns": [
+              {
+                "move_number": 159,
+                "move": "Nxh3+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 192,
+                "move": "Rd1+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 196,
+                "move": "Rd2+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              },
+              {
+                "move_number": 221,
+                "move": "Rg3+",
+                "type": "check_forced",
+                "description": "Check that forces response"
+              }
+            ],
+            "reactive_escape_patterns": [
+              {
+                "move_number": 180,
+                "move": "Kg7",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 194,
+                "move": "Kf2",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              },
+              {
+                "move_number": 198,
+                "move": "Ke3",
+                "type": "king_escape",
+                "description": "King move that could be an escape"
+              }
+            ],
+            "tactical_combinations": [],
+            "positional_themes": [
+              "endgame_phase"
+            ],
+            "time_pressure": {
+              "time_control": "600",
+              "time_class": "rapid",
+              "time_pressure_level": "medium"
+            },
+            "performance_metrics": {
+              "time_class": "rapid",
+              "rated": true,
+              "rules": "chess",
+              "result": ""
+            }
+          }
+        }
+      ],
+      "total_games": 5,
+      "collection_time": "2025-10-05T17:38:37.083349"
+    }
+  ],
+  "lichess_puzzles": {
+    "puzzles": [
+      {
+        "id": "FdqJb",
+        "rating": 1819,
+        "themes": [
+          "advancedPawn",
+          "middlegame",
+          "short",
+          "crushing",
+          "promotion"
+        ],
+        "fen": "",
+        "moves": [],
+        "qec_analysis": {
+          "entanglement_opportunities": [],
+          "forced_move_patterns": [],
+          "tactical_combinations": [],
+          "difficulty_level": "medium",
+          "themes": [
+            "advancedPawn",
+            "middlegame",
+            "short",
+            "crushing",
+            "promotion"
+          ]
+        }
+      }
+    ],
+    "total_puzzles": 1,
+    "collection_time": "2025-10-05T17:38:38.783135"
+  },
+  "lichess_tournaments": {
+    "tournaments": [],
+    "total_tournaments": 0,
+    "collection_time": "2025-10-05T17:38:45.265213"
+  },
+  "metadata": {
+    "collection_time": "2025-10-05T17:38:37.082348",
+    "total_sources": 3,
+    "usernames": [
+      "MagnusCarlsen"
+    ]
+  }
+}
